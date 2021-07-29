@@ -12,7 +12,7 @@ func Start() *cli.App {
 
 	app.Name = "Dice Go"
 	app.Usage = "Rolador de dados via linha de comando"
-	app.Commands = []*cli.Command{
+	app.Commands = []cli.Command{
 		{
 			Name:  "dice",
 			Usage: "Executa a rolagem dos dados",

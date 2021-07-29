@@ -26,7 +26,7 @@ func (r *Roll) parseData() {
 	}
 	r.Quantity = qnt
 
-	faces, err := strconv.Atoi(div[0])
+	faces, err := strconv.Atoi(div[1])
 	if err != nil {
 		log.Fatal(err)
 	}
