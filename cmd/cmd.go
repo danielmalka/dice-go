@@ -33,6 +33,6 @@ func Start() *cli.App {
 func ExecuteRoller(c *cli.Context) error {
 	req := c.String("roll")
 	r := roller.RollDice(req)
-	fmt.Println(r)
+	fmt.Println(r.Message)
 	return nil
 }
